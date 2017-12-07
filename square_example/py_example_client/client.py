@@ -1,7 +1,7 @@
-from pb2 import calculator_pb2_grpc
-from pb2 import calculator_pb2
-
 import grpc
+
+from square_example.pb2 import calculator_pb2
+from square_example.pb2 import calculator_pb2_grpc
 
 channel = grpc.insecure_channel('192.168.8.101:50051')
 

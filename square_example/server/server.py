@@ -1,9 +1,12 @@
 import time
 from concurrent import futures
-from pb2 import calculator_pb2_grpc
-from pb2 import calculator_pb2
+
 import grpc
-import calculator
+
+from square_example.pb2 import calculator_pb2
+from square_example.pb2 import calculator_pb2_grpc
+from square_example.server import calculator
+
 
 #python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. calculator.proto
 
