@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+message inputs {repeated float a = 4 ;
+                int32 b = 2;}
+message return_x {repeated float value = 1;}
+
+
+service Calculator {
+    rpc carpma(inputs)
+    returns (return_x) ;
+}
