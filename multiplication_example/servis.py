@@ -19,16 +19,6 @@ class CalculatorServicer(carpma_pb2_grpc.CalculatorServicer):
         return response
 
 
-
-
-
-
-
-
-
-
-
-
 server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
 carpma_pb2_grpc.add_CalculatorServicer_to_server(CalculatorServicer(), server)
 
